@@ -1,0 +1,53 @@
+@import './styles/variables';
+
+h1 {
+    color: $colorTeal
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 15px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carousel-inner {
+        height: $carouselHeight;
+
+        &>.carousel-item {
+            height: $carouselHeight;
+            width: 100%;
+
+            &>img {
+                height: $carouselHeight;
+                width: 100%;
+                margin: 0;
+                max-width: 100%;
+                object-fit: fill;
+            }
+        }
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .carousel-inner {
+        height: $carouselSmallHeight;
+
+        &>.carousel-item {
+            height: $carouselSmallHeight;
+            width: 100%;
+
+            &>img {
+                height: $carouselSmallHeight;
+                width: 100%;
+                margin: 0;
+                max-width: 100%;
+                object-fit: fill;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import './../../styles/variables';
+
+.post {
+    margin: 2px;
+
+    .post-heading {
+        height: 95px;
+        padding: 20px 15px;
+
+        .h5 {
+            font-size: 14px;
+        }
+
+        .time {
+            font-size: 12px;
+        }
+    }
+
+    .post-description {
+        padding: 15px;
+        max-height: 300px;
+        overflow: auto;
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+}
